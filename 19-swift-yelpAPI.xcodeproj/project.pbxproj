@@ -20,6 +20,8 @@
 		648500E22AE2208300C96B51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		648500E42AE2208300C96B51 /* _9_swift_yelpAPI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = _9_swift_yelpAPI.entitlements; sourceTree = "<group>"; };
 		648500E62AE2208300C96B51 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		648500ED2AE23DFE00C96B51 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		648500EE2AE2439900C96B51 /* -9-swift-yelpAPI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "-9-swift-yelpAPI-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +54,10 @@
 		648500DD2AE2207F00C96B51 /* 19-swift-yelpAPI */ = {
 			isa = PBXGroup;
 			children = (
+				648500EE2AE2439900C96B51 /* -9-swift-yelpAPI-Info.plist */,
 				648500DE2AE2207F00C96B51 /* _9_swift_yelpAPIApp.swift */,
 				648500E02AE2207F00C96B51 /* ContentView.swift */,
+				648500ED2AE23DFE00C96B51 /* Config.xcconfig */,
 				648500E22AE2208300C96B51 /* Assets.xcassets */,
 				648500E42AE2208300C96B51 /* _9_swift_yelpAPI.entitlements */,
 				648500E52AE2208300C96B51 /* Preview Content */,
@@ -149,6 +153,7 @@
 /* Begin XCBuildConfiguration section */
 		648500E82AE2208300C96B51 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 648500ED2AE23DFE00C96B51 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -207,6 +212,7 @@
 		};
 		648500E92AE2208300C96B51 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 648500ED2AE23DFE00C96B51 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -267,6 +273,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"19-swift-yelpAPI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "-9-swift-yelpAPI-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -303,6 +310,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"19-swift-yelpAPI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "-9-swift-yelpAPI-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
