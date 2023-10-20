@@ -11,6 +11,7 @@
 		648500E12AE2207F00C96B51 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648500E02AE2207F00C96B51 /* ContentView.swift */; };
 		648500E32AE2208300C96B51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 648500E22AE2208300C96B51 /* Assets.xcassets */; };
 		648500E72AE2208300C96B51 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 648500E62AE2208300C96B51 /* Preview Assets.xcassets */; };
+		6489FA462AE262CA0051DD73 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6489FA452AE262CA0051DD73 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		648500E62AE2208300C96B51 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		648500ED2AE23DFE00C96B51 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		648500EE2AE2439900C96B51 /* -9-swift-yelpAPI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "-9-swift-yelpAPI-Info.plist"; sourceTree = SOURCE_ROOT; };
+		6489FA452AE262CA0051DD73 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				648500EE2AE2439900C96B51 /* -9-swift-yelpAPI-Info.plist */,
 				648500DE2AE2207F00C96B51 /* _9_swift_yelpAPIApp.swift */,
 				648500E02AE2207F00C96B51 /* ContentView.swift */,
+				6489FA452AE262CA0051DD73 /* DataService.swift */,
 				648500ED2AE23DFE00C96B51 /* Config.xcconfig */,
 				648500E22AE2208300C96B51 /* Assets.xcassets */,
 				648500E42AE2208300C96B51 /* _9_swift_yelpAPI.entitlements */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6489FA462AE262CA0051DD73 /* DataService.swift in Sources */,
 				648500E12AE2207F00C96B51 /* ContentView.swift in Sources */,
 				648500DF2AE2207F00C96B51 /* _9_swift_yelpAPIApp.swift in Sources */,
 			);

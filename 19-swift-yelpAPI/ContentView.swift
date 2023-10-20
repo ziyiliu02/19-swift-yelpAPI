@@ -8,12 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var query: String = ""
+    var service = DataService()
+    
     var body: some View {
         HStack {
-            Text("API_KEY")
+            TextField("What are you looking for?", text: $query)
+            
+            Button {
+                //TODO: Implement query
+            } label: {
+                Text("Go")
+                    .padding(.horizontal)
+                    .padding(.vertical, 10)
+                    .background(.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
         }
-        .onAppear {
-            print(Bundle.main.infoDictionary?["API_KEY"] as? String)
+        .padding()
+        .task {
+            await service.businessSearch()
         }
     }
 }
