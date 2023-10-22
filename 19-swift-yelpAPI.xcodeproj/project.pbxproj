@@ -14,6 +14,7 @@
 		6489FA462AE262CA0051DD73 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6489FA452AE262CA0051DD73 /* DataService.swift */; };
 		6489FA492AE36E960051DD73 /* BusinessSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6489FA482AE36E960051DD73 /* BusinessSearch.swift */; };
 		6489FA4B2AE36FEF0051DD73 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6489FA4A2AE36FEF0051DD73 /* Business.swift */; };
+		64B2C8852AE4CE7200666D5A /* TextHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B2C8842AE4CE7200666D5A /* TextHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		6489FA452AE262CA0051DD73 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		6489FA482AE36E960051DD73 /* BusinessSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearch.swift; sourceTree = "<group>"; };
 		6489FA4A2AE36FEF0051DD73 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		64B2C8842AE4CE7200666D5A /* TextHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				648500DE2AE2207F00C96B51 /* _9_swift_yelpAPIApp.swift */,
 				648500E02AE2207F00C96B51 /* ContentView.swift */,
 				6489FA452AE262CA0051DD73 /* DataService.swift */,
+				64B2C8832AE4CE6100666D5A /* Helpers */,
 				6489FA472AE36DE60051DD73 /* Model */,
 				648500ED2AE23DFE00C96B51 /* Config.xcconfig */,
 				648500E22AE2208300C96B51 /* Assets.xcassets */,
@@ -88,6 +91,14 @@
 				6489FA4A2AE36FEF0051DD73 /* Business.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		64B2C8832AE4CE6100666D5A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				64B2C8842AE4CE7200666D5A /* TextHelper.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 				6489FA492AE36E960051DD73 /* BusinessSearch.swift in Sources */,
 				648500E12AE2207F00C96B51 /* ContentView.swift in Sources */,
 				6489FA4B2AE36FEF0051DD73 /* Business.swift in Sources */,
+				64B2C8852AE4CE7200666D5A /* TextHelper.swift in Sources */,
 				648500DF2AE2207F00C96B51 /* _9_swift_yelpAPIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

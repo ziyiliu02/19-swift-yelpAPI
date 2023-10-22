@@ -30,11 +30,33 @@ struct ContentView: View {
                 }
             }
             
-            List(businesses) { b in 
-                Text(b.name ?? "Nil")
+            List{
+                ForEach(businesses) { business in
+                    VStack(spacing: 20) {
+                        HStack(spacing: 0) {
+                            Image("list-placeholder-image")
+                                .padding(.trailing, 16)
+                            VStack(alignment: .leading) {
+                                Text(business.name ?? "Restaurant")
+                                    .font(Font.system(size: 15))
+                                    .bold()
+//                                Text("\(Int(round(business.distance ?? 0))) m away")
+//                                    .font(Font.system(size: 16))
+//                                    .foregroundColor(Color(red: 67/255, green: 71/255, blue:76/255))
+                                Text(TextHelper.distanceAwayText(meters: business.distance ?? 0))
+                                    .font(Font.system(size: 16))
+                                    .foregroundColor(Color(red: 67/255, green: 71/255, blue:76/255))
+                            }
+                            Spacer()
+                            Image("regular_\(business.rating ?? 0)")
+                        }
+                        Divider()
+                    }
+                }
+                .listRowSeparator(.hidden)
             }
+            .listStyle(.plain)
         }
-        .padding()
         .task {
             businesses = await service.businessSearch()
         }
