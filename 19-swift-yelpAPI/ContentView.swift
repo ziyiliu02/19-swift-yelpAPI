@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @StateObject var viewModel = BusinessModel()
+    @EnvironmentObject var viewModel: BusinessModel
     
     var body: some View {
         VStack {
@@ -62,7 +62,7 @@ struct ContentView: View {
             viewModel.getBusinesses()
         }
         .sheet(item: $viewModel.selectedBusiness) { item in
-            BusinessDetailView(business: item)
+            BusinessDetailView()
         }
     }
 }
@@ -70,5 +70,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(BusinessModel())
     }
 }

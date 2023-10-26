@@ -9,9 +9,12 @@ import SwiftUI
 
 struct BusinessDetailView: View {
     
-    var business: Business?
+    @EnvironmentObject var viewModel: BusinessModel
     
     var body: some View {
+        
+        let business = viewModel.selectedBusiness
+        
         VStack(spacing: 0) {
             // Image
             ZStack(alignment: .trailing) {
@@ -89,5 +92,6 @@ struct BusinessDetailView: View {
 struct BusinessDetailView_Previews: PreviewProvider {
     static var previews: some View {
         BusinessDetailView()
+            .environmentObject(BusinessModel())
     }
 }

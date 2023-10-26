@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct _9_swift_yelpAPIApp: App {
+    
+    @StateObject var viewModel = BusinessModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(viewModel)
         }
     }
 }
