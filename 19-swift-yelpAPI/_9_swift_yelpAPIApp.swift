@@ -11,11 +11,17 @@ import SwiftUI
 struct _9_swift_yelpAPIApp: App {
     
     @StateObject var viewModel = BusinessModel()
+    @AppStorage("onboarding") var needsOnboarding = true
     
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(viewModel)
+                .fullScreenCover(isPresented: $needsOnboarding) {
+                    needsOnboarding = false
+                } content: {
+                    OnboardingView()
+                }
         }
     }
 }
